@@ -1,9 +1,13 @@
-from enum import Enum
 import logging
 from pyfix.connection import ConnectionState, MessageDirection
 from pyfix.engine import FIXEngine
 from pyfix.message import FIXMessage
 from pyfix.server_connection import FIXServer
+import sys
+if sys.version_info[0] == 3:
+    from enum import Enum
+else:
+    from aenum import Enum
 
 class Side(Enum):
     buy = 1

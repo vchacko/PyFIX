@@ -1,11 +1,16 @@
 import importlib
 import sys
+if sys.version_info[0] == 3:
+    from enum import Enum
+else:
+    from aenum import Enum
 from pyfix.codec import Codec
 from pyfix.journaler import DuplicateSeqNoError
 from pyfix.message import FIXMessage, MessageDirection
 
 from pyfix.session import *
-from enum import Enum
+
+
 from pyfix.event import FileDescriptorEventRegistration, EventType, TimerEventRegistration
 
 class ConnectionState(Enum):

@@ -1,4 +1,4 @@
-from pyfix.FIX44 import msgtype, messages
+from pyfix.FIX44 import msgtype, messages, fixtags
 
 __author__ = 'tom'
 

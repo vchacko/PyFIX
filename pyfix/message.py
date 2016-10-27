@@ -1,5 +1,9 @@
 from collections import OrderedDict
-from enum import Enum
+import sys
+if sys.version_info[0] == 3:
+    from enum import Enum
+else:
+    from aenum import Enum
 
 class MessageDirection(Enum):
     INBOUND = 0

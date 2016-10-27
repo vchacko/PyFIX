@@ -1,9 +1,13 @@
-from enum import Enum
 import datetime
 import os
 from select import select, error
 import errno
 import time
+import sys
+if sys.version_info[0] == 3:
+    from enum import Enum
+else:
+    from aenum import Enum
 
 class EventType(Enum):
     NONE = 0

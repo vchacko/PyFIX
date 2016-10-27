@@ -10,8 +10,8 @@ config = {
     'download_url': 'https://github.com/wannabegeek/PyFIX/',
     'author_email': 'tom@wanabegeek.com.',
     'version': '0.1',
-    'install_requires': [''],
-    'packages': ['pyfix', 'pyfix/FIX44'],
+    'install_requires': ['aenum'],
+    'packages': ['pyfix', 'pyfix/FIX44', 'pyfix/FIXT11'],
     'scripts': [],
     'name': 'pyfix'
 }
